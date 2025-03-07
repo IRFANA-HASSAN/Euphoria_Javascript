@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style1.css">
+    <title>Euphoria Navigation || Products Details</title>
+</head>
+<body>
+    <!--header section-->
+    <header>
+        <h1 class="logo"><a href="#"><img src="./assets/icons/Euphoria.svg" alt="icon"></a></h1>
+        <ul class="nav-links">
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">Combos</a></li>
+            <li><a href="#">Joggers</a></li>
+        </ul>
+        <div class="search-container">
+            <span class="search-icon"><img src="./assets/icons/search.svg" alt="icon"></span>
+            <input type="text" class="search-input" placeholder="Search">
+        </div>
+        <div class="icons">
+            <button class="icon-btn"><img src="./assets/icons/heart.svg" alt="icon"></button>
+            <button class="icon-btn"><img src="./assets/icons/user.svg" alt="icon"></button>
+            <button class="icon-btn"><img src="./assets/icons/cart.svg" alt="icon"></button>
+        </div>
+        <nav id="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </nav>
+    </header>
+    <!--product hero section-->
+    <section class="product_hero">
+        <div class="container">
+            <div class="first">
+                <div class="product-thumbnails">
+                    <div class="thumbnail-wrapper">
+                        <div class="thumbnail-list">
+                            <div class="thumbnail active" >
+                                <img src="./assets/images/bg30.png" alt="Raven Hoodie Front">
+                            </div>
+                            <div class="thumbnail" >
+                                <img src="./assets/images/product_hero_bg.jpg" alt="Raven Hoodie Side">
+                            </div>
+                            <div class="thumbnail" >
+                                <img src="./assets/images/bg31.png" alt="Raven Hoodie Pink Variant">
+                            </div>
+                            <div class="butn">
+                                <div class="nav-button nav-button-up"><img src="./assets/icons/up.svg" alt="uparrow"></div>
+                                <div class="nav-button nav-button-down active"><img src="./assets/icons/down.svg" alt="downarrow"></div>
+                            </div>
+                               
+                        </div>
+                    </div>
+                </div>
+                <div class="main-image">
+                    <img src="./assets/images/product_hero_bg.jpg" alt="Raven Hoodie With Black colored Design" id="mainImg">
+                </div>
+            </div>
+            <div class="product-infos">
+                <div class="breadcrumb">
+                    Shop <img src="./assets/icons/right-arrow-light.svg" alt="arrow"> Women <img src="./assets/icons/right-arrow-light.svg" alt="arrow"> Top
+                </div>
+                <h1 class="product-hero_title">Raven Hoodie With <br> Black colored Design</h1>
+                
+                <div class="star-rating">
+                    <div class="stars">
+                        <img src="./assets/icons/star.svg" alt="staricon">
+                        <img src="./assets/icons/star.svg" alt="staricon">
+                        <img src="./assets/icons/star.svg" alt="staricon">
+                        <img src="./assets/icons/star.svg" alt="staricon">
+                        <img src="./assets/icons/star.svg" alt="staricon">
+                        <span class="review-count">3.5</span>
+                    </div>
+                    <span class="review-count"><img src="./assets/icons/message.svg" alt="messageicon">120 comments</span>
+                </div>
+                <div class="size-section">
+                    <div class="section-header">
+                        <span class="section_size_title">Select Size</span>
+                        <a href="#" class="size-guide">Size Guide <img src="./assets/icons/small rightarrow.svg" alt="arrow"></a>
+                    </div>
+                    <div class="size-options">
+                        <button class="size-option">XS</button>
+                        <button class="size-option">S</button>
+                        <button class="size-option">M</button>
+                        <button class="size-option selected">L</button>
+                        <button class="size-option">XL</button>
+                    </div>
+                </div>
+                <div class="colors-section">
+                    <div class="section-colortitle">Colours Available</div>
+                    <div class="color-options">
+                        <div class="color-option selected" style="background-color: #000;"></div>
+                        <div class="color-option" style="background-color: #f3e33b;"></div>
+                        <div class="color-option" style="background-color: #f573dc;"></div>
+                        <div class="color-option" style="background-color: #b82647;"></div>
+                    </div>
+                </div>
+                <div class="actions">
+                    <button class="add-to-cart"><img src="./assets/icons/cart1.png" alt="cart">Add to cart</button>
+                    <div class="price">$63.00</div>
+                </div>
+                <hr/>
+                <div class="features-container">
+                    <div class="feature">
+                      <div class="icon-container">
+                        <img src="./assets/icons/credit card.svg" alt="Secure payment icon" width="24" height="24">
+                      </div>
+                      <div class="feature-text">Secure payment</div>
+                    </div>
+                    
+                    <div class="feature">
+                      <div class="icon-container">
+                        <img src="./assets/icons/Size&Fit.svg" alt="Size and fit icon" width="24" height="24">
+                      </div>
+                      <div class="feature-text">Size & Fit</div>
+                    </div>
+                    
+                    <div class="feature">
+                      <div class="icon-container">
+                        <img src="./assets/icons/truck.svg" alt="Free shipping icon" width="24" height="24">
+                      </div>
+                      <div class="feature-text">Free shipping</div>
+                    </div>
+                    
+                    <div class="feature">
+                      <div class="icon-container">
+                        <img src="./assets/icons/Free-Shipping&Returns.svg" alt="Free Shipping & Returns icon" width="24" height="24">
+                      </div>
+                      <div class="feature-text">Free Shipping & Returns</div>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <section class="wrapper">
+        <!--hero product details-->
+        <section class="products_details">
+            <div class="hero_detail_container">
+                <div class="product-section">
+                    <div class="left">
+                        <div class="header-container">
+                            <div class="purple-bar"></div>
+                            <div class="header-text">Product Description</div>
+                        </div>
+                        <div class="tabs">
+                            <div class="tab active" data-tab="description">Description</div>
+                            <div class="tab" data-tab="user-comments">User comments <span class="tab-badge active">31</span></div>
+                            <div class="tab" data-tab="qa">Question & Answer <span class="tab-badge">4</span></div>
+                        </div>
+                        
+                        <div class="tab-content active" id="description">
+                            <p class="product-description">
+                                100% Bio-washed Cotton – makes the fabric extra soft & silky. Flexible ribbed crew neck. Precisely stitched with no pilling & no fading. Provide  all-time comfort. Anytime, anywhere. Infinite range of matte-finish HD prints.
+                            </p>
+                        </div>
+                        <div class="tab-content" id="user-comments" >
+                            <p>User comments content would go here.</p>
+                        </div>
+                        
+                        <div class="tab-content" id="qa">
+                            <p>Question & Answer content would go here.</p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="width_box">
+                            <div class="specs-table">
+                                <div class="detail-item">
+                                    <span class="label">Fabric</span>
+                                    <span class="value">Bio-washed Cotton</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="label">Pattern</span>
+                                    <span class="value">Printed</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="label">Fit</span>
+                                    <span class="value">Regular-fit</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="label">Neck</span>
+                                    <span class="value">Round Neck</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="label">Sleeve</span>
+                                    <span class="value">Half-sleeves</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="label">Style</span>
+                                    <span class="value">Casual Wear</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>        
+        </section>
+        <!--limelight section-->
+        <section class="limelight">
+            <div class="header-container">
+                <div class="purple-bar"></div>
+                <div class="header-text">Similar Products</div>
+            </div>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="./assets/images/img-20.jpg" alt="Black Sweatshirt" class="product-image">
+                        <button class="favorite-btn">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <div class="top">
+                            <h3 class="product-title">White T-Shirt</h3>
+                            <p class="brand-name">Priya’s  Brand</p>
+                        </div>
+                        <div class="bottum"><p class="product-price">$13.00</p></div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="./assets/images/img-22.jpg" alt="Black Sweatshirt" class="product-image">
+                        <button class="favorite-btn">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <div class="top">
+                            <h3 class="product-title">Dark Green Sweatshirt....</h3>
+                            <p class="brand-name">Roboto’s  Brand</p>
+                        </div>
+                        <div class="bottum"><p class="product-price">$127.00</p></div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="./assets/images/img-23.jpg" alt="Black Sweatshirt" class="product-image">
+                        <button class="favorite-btn">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <div class="top">
+                            <h3 class="product-title">Levender Sweatshirt ....</h3>
+                            <p class="brand-name">Jhanvi’s  Brand</p>
+                        </div>
+                        <div class="bottum"><p class="product-price">$133.00</p></div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="./assets/images/img-24.jpg" alt="Black Sweatshirt" class="product-image">
+                        <button class="favorite-btn">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <div class="top">
+                            <h3 class="product-title">Urban jacket with white ....</h3>
+                            <p class="brand-name">Sagar’s  Brand</p>
+                        </div>
+                        <div class="bottum"><p class="product-price">$79.00</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+     <!--footer section-->
+     <footer class="footer">
+        <div class="footer_container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Need Help</h3>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Track Order</a></li>
+                        <li><a href="#">Returns & Refunds</a></li>
+                        <li><a href="#">FAQ's</a></li>
+                        <li><a href="#">Career</a></li>
+                    </ul>
+                    <div class="social-icons">
+                        <div class="social-icon">
+                            <img class="grayscale-icon" src="./assets/icons/facebook.svg" alt="Facebook icon"/>
+                            <img class="colored-icon" src="./assets/icons/facebook_color.png" alt="Facebook icon"/>
+                        </div>
+                        <div class="social-icon">
+                            <img class="grayscale-icon" src="./assets/icons/instagram.svg" alt="Instagram icon"/>
+                            <img class="colored-icon" src="./assets/icons/instagram_color.png" alt="Instagram icon"/>
+                        </div>
+                        <div class="social-icon">
+                            <img class="grayscale-icon" src="./assets/icons/twitter.svg" alt="Twitter icon"/>
+                            <img class="colored-icon" src="./assets/icons/twitter_color.png" alt="Twitter icon"/>
+                        </div>
+                        <div class="social-icon">
+                            <img class="grayscale-icon" src="./assets/icons/linkedin.svg" alt="LinkedIn icon"/>
+                            <img class="colored-icon" src="./assets/icons/linkedin_color.png" alt="LinkedIn icon"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">euphoria Blog</a></li>
+                        <li><a href="#">euphoriastan</a></li>
+                        <li><a href="#">Collaboration</a></li>
+                        <li><a href="#">Media</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>More Info</h3>
+                    <ul>
+                        <li><a href="#">Term and Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Location</h3>
+                    <ul>
+                        <li>support@euphoria.in</li>
+                        <li>Eklingpura Chouraha, Ahmedabad Main Road</li>
+                        <li>(NH 8- Near Mahadev Hotel) Udaipur, India- 313002</li>
+                    </ul>
+                    <div class="app-download">
+                        <h3>Download The App</h3>
+                        <div class="app-buttons">
+                            <div class="app-button">
+                                <img src="./assets/icons/playstoree.svg" alt="Google Play">
+                                <div class="app-text">
+                                    <span class="small-text">android app on</span>
+                                    <span class="big-text">Google Play</span>
+                                </div>
+                            </div>
+                            <div class="app-button">
+                                <img src="./assets/icons/phonee.svg" alt="App Store">
+                                <div class="app-text">
+                                    <span class="small-text">Available on the</span>
+                                    <span class="big-text">App Store</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="categories-dropdown">
+                <div class="dropdown-header">
+                    <h3>Popular Categories</h3>
+                    <div class="dropdown-arrow">
+                        <img class="fas fa-chevron-down" src="./assets/icons/right-arrow-light.svg" alt="dropdown-arrow"/>
+                    </div>
+                </div>
+                <div class="dropdown-content">
+                    <!-- Content for categories would go here -->
+                    <ul>
+                        <li><a class="drop" href="#">Term and Conditions</a></li>
+                        <li><a class="drop" href="#">Privacy Policy</a></li>
+                        <li><a class="drop" href="#">More Info</a></li>
+                        <li><a class="drop" href="#">Location</a></li>
+                        <li><a class="drop" href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="copyright">
+                Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/script1.js"></script>
+</body>
+</html>
