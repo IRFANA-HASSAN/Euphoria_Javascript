@@ -272,6 +272,31 @@ nav {
 .arrow-right {
     right: 20px;
 }
+.dots-container_hero {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 1px;
+}
+
+.dothero {
+    width: 62px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.dothero:first-child{
+    border-radius: 50px 10px 10px 50px;
+}
+.dothero:last-child{
+    border-radius: 10px 50px 50px 10px;
+}
+.dothero.active {
+    background-color: white;
+}
 /* Deals section styles */
 .deals {
     padding: 20px;
@@ -1241,6 +1266,10 @@ h2 {
     .slide-content{
         gap: 20px;
     }
+    .dothero {
+        width: 52px;
+        height: 8px;
+    }
     .category-text{
         font-size: 28px;
     }
@@ -1319,6 +1348,7 @@ h2 {
     }
     .product-info {
         padding: 10px;
+        flex-direction: column;
     }
     .product-title {
         font-size: 13px;
@@ -1432,6 +1462,10 @@ h2 {
     .slide-content{
         gap: 8px;
     }
+    .dothero {
+        width: 31px;
+        height: 4px;
+    }
     .category-text, .description{
         font-size: 18px;
     }
@@ -1494,6 +1528,9 @@ h2 {
     }
     .categories-container {
         grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     h1 {
         font-size: 1.8rem;
@@ -1519,6 +1556,9 @@ h2 {
     }
     .slide-content{
         gap: 6px;
+    }
+    .dots-container_hero {
+        bottom: 10px;
     }
     .category-text, .description{
         font-size: 16px;

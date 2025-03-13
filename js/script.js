@@ -8,26 +8,92 @@ hamburger.addEventListener('click', () => {
 
 document.addEventListener('DOMContentLoaded', () => {
     //hero image slider
+    // const slider = document.querySelector('.slider');
+    // const leftArrow = document.querySelector('.arrow-left');
+    // const rightArrow = document.querySelector('.arrow-right');
+    // let currentIndex = 0;
+    // const totalSlides = 3;
+
+    // function updateSlider() {
+    //     const offset = -currentIndex * 33.333;
+    //     slider.style.transform = `translateX(${offset}%)`;
+    // }
+
+    // leftArrow.addEventListener('click', () => {
+    //     currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+    //     updateSlider();
+    // });
+
+    // rightArrow.addEventListener('click', () => {
+    //     currentIndex = (currentIndex + 1) % totalSlides;
+    //     updateSlider();
+    // });
+
     const slider = document.querySelector('.slider');
     const leftArrow = document.querySelector('.arrow-left');
     const rightArrow = document.querySelector('.arrow-right');
+    const dots = document.querySelectorAll('.dothero');
     let currentIndex = 0;
-    const totalSlides = 3;
+    const totalSlides = 2;
 
+    // Function to update slider position and dots
     function updateSlider() {
+        // Update slider position
         const offset = -currentIndex * 33.333;
         slider.style.transform = `translateX(${offset}%)`;
+        
+        // Update active dot
+        dots.forEach((dot, index) => {
+            if (index === currentIndex) {
+                dot.classList.add('active');
+            } else {
+                dot.classList.remove('active');
+            }
+        });
     }
 
+    // Function to go to a specific slide
+    function currentSlide(index) {
+        currentIndex = index;
+        updateSlider();
+    }
+
+    // Left arrow click handler
     leftArrow.addEventListener('click', () => {
         currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
         updateSlider();
     });
 
+    // Right arrow click handler
     rightArrow.addEventListener('click', () => {
         currentIndex = (currentIndex + 1) % totalSlides;
         updateSlider();
     });
+
+    // Add click event listeners to each dot
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => {
+          currentIndex = index;
+          updateSlider();
+      });
+    });
+
+    // Optional: Add auto-scrolling
+    setInterval(() => {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        updateSlider();
+    }, 5000);
+
+    // Initialize the slider
+    updateSlider();
+
+
+
+
+
+
+
+
 
     //new arrivals slider
     const newArrivals = document.querySelector('.new_arrivals_slides');
